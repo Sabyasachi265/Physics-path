@@ -66,7 +66,6 @@ export const resources: Resource[] = [
     timeCommitment: "4–6 weeks",
   },
   {
-  {
     id: "hecht-optics",
     name: "Optics",
     author: "Eugene Hecht",
