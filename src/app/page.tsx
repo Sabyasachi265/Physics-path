@@ -96,9 +96,9 @@ export default function LandingPage() {
         <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
           The path
         </p>
-        <h2 className="text-2xl font-bold tracking-tight">Three phases, clearly defined</h2>
+        <h2 className="text-2xl font-bold tracking-tight">Three phases</h2>
         <p className="mt-2 max-w-md text-sm text-muted-foreground">
-          No guessing what to study next. Each phase builds on the last.
+          No guessing what to study next
         </p>
 
         <div className="mt-8 flex flex-col">
@@ -136,7 +136,7 @@ export default function LandingPage() {
         </p>
         <h2 className="text-2xl font-bold tracking-tight">I built it for the gap which is ignored.</h2>
         <p className="mt-2 max-w-md text-sm text-muted-foreground">
-          AP Physics gives you a foundation. Olympiad prep requires a sort of rewiring.
+          AP Physics gives you a foundation to work on. Olympiad prep requires building upon it.
         </p>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
