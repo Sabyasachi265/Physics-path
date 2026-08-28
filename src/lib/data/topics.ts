@@ -26,7 +26,7 @@ export const topics: Topic[] = [
       },
     ],
     recommendedResourceIds: ["morin-mechanics", "kleppner", "puzzling-problems"],
-    practiceProblems: ["F=ma 2019 #7", "IPhO 2012 P1", "Irodov 1.13–1.20"],
+    practiceProblems: ["Irodov 1.13–1.20"],
     relatedTopicIds: ["dynamics", "rotation", "oscillations"],
   },
   {
@@ -48,7 +48,7 @@ export const topics: Topic[] = [
       },
     ],
     recommendedResourceIds: ["morin-mechanics", "kleppner"],
-    practiceProblems: ["F=ma 2020 #4–6", "Irodov 1.101–1.120"],
+    practiceProblems: ["Irodov 1.101–1.120"],
     relatedTopicIds: ["kinematics", "energy", "rotation"],
   },
   {
@@ -70,7 +70,7 @@ export const topics: Topic[] = [
       },
     ],
     recommendedResourceIds: ["morin-mechanics", "kleppner"],
-    practiceProblems: ["F=ma 2018 #3", "Irodov 1.134–1.155"],
+    practiceProblems: ["Irodov 1.134–1.155"],
     relatedTopicIds: ["dynamics", "oscillations", "thermo"],
   },
   {
@@ -92,7 +92,7 @@ export const topics: Topic[] = [
       },
     ],
     recommendedResourceIds: ["morin-mechanics", "kleppner"],
-    practiceProblems: ["F=ma 2021 #11", "Irodov 1.156–1.180"],
+    practiceProblems: ["Irodov 1.156–1.180"],
     relatedTopicIds: ["dynamics", "rotation"],
   },
   {
@@ -114,7 +114,7 @@ export const topics: Topic[] = [
       },
     ],
     recommendedResourceIds: ["morin-mechanics", "kleppner"],
-    practiceProblems: ["F=ma 2022 #14", "Irodov 1.240–1.280"],
+    practiceProblems: ["Irodov 1.240–1.280"],
     relatedTopicIds: ["dynamics", "oscillations", "momentum"],
   },
   {
@@ -136,7 +136,7 @@ export const topics: Topic[] = [
       },
     ],
     recommendedResourceIds: ["morin-mechanics", "purcell-morin", "mit-803"],
-    practiceProblems: ["F=ma 2019 #15", "IPhO 2015 P2", "Irodov 4.1–4.50"],
+    practiceProblems: ["Irodov 4.1–4.50"],
     relatedTopicIds: ["kinematics", "energy", "electrostatics"],
   },
   {
@@ -158,7 +158,7 @@ export const topics: Topic[] = [
       },
     ],
     recommendedResourceIds: ["morin-mechanics", "kleppner"],
-    practiceProblems: ["F=ma 2020 #18", "Irodov 1.195–1.215"],
+    practiceProblems: ["Irodov 1.195–1.215"],
     relatedTopicIds: ["energy", "rotation"],
   },
   {
@@ -180,7 +180,7 @@ export const topics: Topic[] = [
       },
     ],
     recommendedResourceIds: ["irodov"],
-    practiceProblems: ["F=ma 2018 #12", "Irodov 2.1–2.50"],
+    practiceProblems: ["Irodov 2.1–2.50"],
     relatedTopicIds: ["dynamics", "energy"],
   },
   {
@@ -202,7 +202,7 @@ export const topics: Topic[] = [
       },
     ],
     recommendedResourceIds: ["irodov", "mit-8044"],
-    practiceProblems: ["F=ma 2021 #16", "IPhO 2016 P3", "Irodov 2.125–2.180"],
+    practiceProblems: ["Irodov 2.125–2.180"],
     relatedTopicIds: ["energy"],
   },
   {
@@ -224,7 +224,7 @@ export const topics: Topic[] = [
       },
     ],
     recommendedResourceIds: ["griffiths", "purcell-morin"],
-    practiceProblems: ["F=ma 2022 #19", "Irodov 3.1–3.80"],
+    practiceProblems: ["Irodov 3.1–3.80"],
     relatedTopicIds: ["magnetism", "oscillations"],
   },
   {
@@ -246,7 +246,7 @@ export const topics: Topic[] = [
       },
     ],
     recommendedResourceIds: ["griffiths", "purcell-morin"],
-    practiceProblems: ["F=ma 2021 #20", "IPhO 2018 P2", "Irodov 3.200–3.280"],
+    practiceProblems: ["Irodov 3.200–3.280"],
     relatedTopicIds: ["electrostatics"],
   },
   {
@@ -290,7 +290,7 @@ export const topics: Topic[] = [
       },
     ],
     recommendedResourceIds: ["hecht-optics"],
-    practiceProblems: ["USAPhO 2020 B1", "IPhO 2017 P1", "F=ma 2018 #8–9"],
+    practiceProblems: ["USAPhO 2020 B1", "IPhO 2017 P1"],
     relatedTopicIds: ["oscillations", "magnetism"],
   },
   {
