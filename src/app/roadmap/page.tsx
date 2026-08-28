@@ -41,10 +41,14 @@ export default function RoadmapPage() {
     <div className="container max-w-3xl py-10">
       <h1 className="text-3xl font-bold tracking-tight">Physics roadmap</h1>
       <p className="mt-2 text-muted-foreground">
-        Work through the phases in order. Expand each phase to see individual topics,
+        Try working through the phases in order. Expand each phase to see individual topics,
         prerequisites, resources, and checkpoints.
       </p>
-
+      <div className="mt-4 rounded-lg border border-border bg-secondary/30 p-4">
+  <p className="text-sm text-muted-foreground">
+    <strong>Note:</strong> This is the path I think works best, but it might not work for you. If you don't want to follow, try using it as a checklist!
+  </p>
+     </div>
       <div className="mt-8 flex flex-col gap-3">
         {phases.map((phase) => {
           const isOpen = openPhases.has(phase.id);
