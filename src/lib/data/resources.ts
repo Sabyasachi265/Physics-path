@@ -159,7 +159,7 @@ export const resources: Resource[] = [
     author: "AAPT",
     category: "exams",
     description:
-      "Self explanatory."
+      "Self explanatory.",
     difficulty: 5,
     bestFor: "USAPhO preparation",
     timeCommitment: "3 hours per exam",
