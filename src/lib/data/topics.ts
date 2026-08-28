@@ -8,21 +8,22 @@ import type { Topic } from "@/types/content";
  */
 export const topics: Topic[] = [
   {
+  {
     id: "kinematics",
     name: "Advanced Kinematics",
     icon: "target",
     phase: 1,
     estimatedTime: "1 week",
     overview:
-      "Go beyond constant acceleration. Master parametric motion, relative motion in 2D, and constraints. The key shift: stop memorizing formulas, start deriving relationships from geometry.",
+      "Parametric motion, 2D relative motion, and constraints. You SHOULD derive relationships from geometry instead of memorizing formulas.",
     misconceptions: [
       {
         wrong: "Velocity is always parallel to displacement.",
-        right: "Velocity is tangent to the path, not necessarily along net displacement.",
+        right: "Velocity is tangent to the path. Displacement connects start to end; they're different things.",
       },
       {
-        wrong: "Acceleration perpendicular to velocity means circular motion.",
-        right: "Perpendicular acceleration means speed is constant, but the path isn't necessarily circular.",
+        wrong: "Perpendicular acceleration means circular motion.",
+        right: "Perpendicular acceleration keeps speed constant. The path could be elliptical, parabolic, or anything else.",
       },
     ],
     recommendedResourceIds: ["morin-mechanics", "kleppner", "puzzling-problems"],
@@ -36,15 +37,15 @@ export const topics: Topic[] = [
     phase: 1,
     estimatedTime: "1.5 weeks",
     overview:
-      "Forces at olympiad depth. Master constraint equations, pseudo-forces in non-inertial frames, and friction in non-obvious configurations. Think about systems, not objects.",
+      "Constraint equations, pseudo-forces in non-inertial frames, friction in complex setups. Analyze the systems and not individual objects.",
     misconceptions: [
       {
         wrong: "Normal force always equals mg.",
-        right: "Normal force depends on the full system — acceleration, curvature, and other applied forces.",
+        right: "Normal force depends on acceleration, curvature, and all other forces acting.",
       },
       {
-        wrong: "Static friction is always less than kinetic friction.",
-        right: "Maximum static friction is typically greater than kinetic friction, and static friction can take any value from 0 up to that maximum.",
+        wrong: "Static friction is weaker than kinetic friction.",
+        right: "Maximum static friction is usually stronger. Static friction can be anywhere from 0 to its maximum.",
       },
     ],
     recommendedResourceIds: ["morin-mechanics", "kleppner"],
@@ -58,15 +59,15 @@ export const topics: Topic[] = [
     phase: 1,
     estimatedTime: "1 week",
     overview:
-      "Energy methods are often faster than force methods at the olympiad level. Master potential energy landscapes, the work-energy theorem in full generality, and power in mechanical systems.",
+      "Energy methods are faster than force methods for olympiad problems. Learn potential energy landscapes and the full work-energy theorem.",
     misconceptions: [
       {
-        wrong: "The work-energy theorem only applies to a single particle.",
-        right: "It applies to any system — track work done by every force, including internal ones, carefully.",
+        wrong: "Work-energy theorem only applies to particles.",
+        right: "It applies to any system. Track work by all forces, including internal ones.",
       },
       {
         wrong: "Conservative forces do no work.",
-        right: "Conservative forces do work; that work is path-independent and equal to the negative change in potential energy.",
+        right: "They do work. That work is path-independent and equals negative change in potential energy.",
       },
     ],
     recommendedResourceIds: ["morin-mechanics", "kleppner"],
@@ -80,20 +81,21 @@ export const topics: Topic[] = [
     phase: 1,
     estimatedTime: "1 week",
     overview:
-      "Impulse-momentum in full generality, elastic vs. inelastic collisions in 2D, center-of-mass frames, and rocket problems. Working in the center-of-mass frame simplifies collision problems dramatically.",
+      "Impulse-momentum theorem, elastic and inelastic collisions in 2D, center-of-mass frames, rocket problems.",
     misconceptions: [
       {
-        wrong: "Momentum is conserved only in fully isolated systems.",
-        right: "Momentum along any direction is conserved whenever the net external force along that direction is zero.",
+        wrong: "Momentum conserves only in isolated systems.",
+        right: "Momentum along any direction conserves when net external force along that direction is zero.",
       },
       {
-        wrong: "An elastic collision just means no energy is lost.",
-        right: "That's true, but the more useful fact is that the relative velocity reverses exactly: v_rel_after = −v_rel_before.",
+        wrong: "Elastic means no energy loss.",
+        right: "True, but more useful: relative velocity reverses exactly. v_rel_after = −v_rel_before.",
       },
     ],
     recommendedResourceIds: ["morin-mechanics", "kleppner"],
     practiceProblems: ["F=ma 2021 #11", "Irodov 1.156–1.180"],
     relatedTopicIds: ["dynamics", "rotation"],
+  },
   },
   {
     id: "rotation",
@@ -102,7 +104,7 @@ export const topics: Topic[] = [
     phase: 1,
     estimatedTime: "1.5 weeks",
     overview:
-      "Moment of inertia, angular momentum, torque, and rolling without slipping. The parallel axis theorem. Angular momentum conservation is underused by AP-trained students — it often bypasses complex force analysis entirely.",
+      "Moment of inertia, angular momentum, torque, and rolling without slipping. The parallel axis theorem. Angular momentum conservation is really underused by AP-trained students. It often bypasses complex force analysis entirely!!",
     misconceptions: [
       {
         wrong: "An object rolling without slipping has no friction acting on it.",
@@ -124,11 +126,11 @@ export const topics: Topic[] = [
     phase: 2,
     estimatedTime: "2 weeks",
     overview:
-      "Simple harmonic motion derived from the differential equation, not memorized formulas. Damped and driven oscillations qualitatively. Coupled oscillators. Wave superposition and standing waves.",
+      "Simple harmonic motion derived from the differential equation. Damped and driven oscillations qualitatively. Coupled oscillators. Wave superposition and standing waves.",
     misconceptions: [
       {
         wrong: "The period of SHM depends on amplitude.",
-        right: "For ideal SHM, the period is amplitude-independent — that's essentially the definition of SHM.",
+        right: "For ideal SHM, the period is amplitude-independent. That's essentially the definition of SHM.",
       },
       {
         wrong: "Waves transport matter from one place to another.",
@@ -212,7 +214,7 @@ export const topics: Topic[] = [
     phase: 2,
     estimatedTime: "2 weeks",
     overview:
-      "Coulomb's law, electric fields and potentials, Gauss's law in full generality, capacitors, and conductors in equilibrium. Master Gauss's law — it's far more powerful than Coulomb's law for symmetric charge distributions.",
+      "Coulomb's law, electric fields and potentials, Gauss's law in full generality, capacitors, and conductors in equilibrium. Master Gauss's law: it's far more powerful than Coulomb's law for symmetric charge distributions.",
     misconceptions: [
       {
         wrong: "The electric field is zero inside any closed surface.",
@@ -256,11 +258,11 @@ export const topics: Topic[] = [
     phase: 3,
     estimatedTime: "2 weeks",
     overview:
-      "The Euler-Lagrange equation and generalized coordinates. Not strictly required for USAPhO, but it transforms your ability to solve complex constraint problems and is close to essential for serious olympiad training beyond F=ma.",
+      "The Euler-Lagrange equation and generalized coordinates. Not strictly required for USAPhO, but it helps your ability to solve complex constraint problems and is close to essential for serious olympiad training beyond F=ma.",
     misconceptions: [
       {
         wrong: "Lagrangian mechanics is just another way to write F = ma.",
-        right: "It's a genuinely different framework — you only need kinetic and potential energy, never force vectors directly.",
+        right: "It's a genuinely different framework. You only need kinetic and potential energy, never force vectors directly.",
       },
       {
         wrong: "You need calculus of variations to use it.",
@@ -278,7 +280,7 @@ export const topics: Topic[] = [
     phase: 3,
     estimatedTime: "1.5 weeks",
     overview:
-      "Geometric optics — ray diagrams, the lensmaker's equation, mirrors — plus wave optics: interference, diffraction, and the basics of polarization. Olympiad optics problems reward disciplined, consistent sign conventions.",
+      "Geometric optics: ray diagrams, the lensmaker's equation, mirrors — plus wave optics: interference, diffraction, and the basics of polarization. Olympiad optics problems reward good discipline and consistent SIGN CONVENTIONS!",
     misconceptions: [
       {
         wrong: "A diverging lens always produces a smaller image.",
@@ -300,7 +302,7 @@ export const topics: Topic[] = [
     phase: 3,
     estimatedTime: "1.5 weeks",
     overview:
-      "Special relativity — Lorentz transforms, energy-momentum, four-vectors — plus the photoelectric effect, the de Broglie wavelength, and basic quantum numbers. F=ma tests modern physics lightly; USAPhO tests special relativity seriously.",
+      "Special relativity: Lorentz transforms, energy-momentum, four-vectors — plus the photoelectric effect, the de Broglie wavelength, and basic quantum numbers. F=ma tests modern physics lightly; USAPhO tests special relativity seriously.",
     misconceptions: [
       {
         wrong: "Time dilation means moving clocks run slow from every point of view.",
