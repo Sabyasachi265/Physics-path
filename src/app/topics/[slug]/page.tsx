@@ -81,9 +81,6 @@ export default function TopicDetailPage({ params }: { params: { slug: string } }
       </section>
 
       <section className="mt-8">
-        <h2 className="flex items-center gap-1.5 border-b border-border pb-2 text-base font-semibold">
-          <ListChecks className="h-4 w-4" /> Curated practice problems
-        </h2>
         <div className="mt-4 flex flex-col gap-2">
           {topic.practiceProblems.map((p) => (
             <div
