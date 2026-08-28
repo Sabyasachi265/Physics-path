@@ -27,11 +27,6 @@ const FEATURES = [
     body: "Every topic flags common mistakes.",
   },
   {
-    icon: Target,
-    title: "Curated problems",
-    body: "Picked practice problems tied directly to the concept you're studying.",
-  },
-  {
     icon: Link2,
     title: "Related topics",
     body: "See how each concept connects to others, so nothing feels isolated from the bigger picture.",
