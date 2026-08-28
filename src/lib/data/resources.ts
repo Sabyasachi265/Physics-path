@@ -1,10 +1,3 @@
-import type { Resource, ResourceCategory } from "@/types/content";
-
-/**
- * Every resource in the library. `id` is referenced by topics.ts
- * (recommendedResourceIds) and by the saved_resources database table, so
- * treat these ids as stable — don't rename an existing one.
- */
 export const resources: Resource[] = [
   {
     id: "morin-mechanics",
@@ -12,7 +5,7 @@ export const resources: Resource[] = [
     author: "David Morin",
     category: "textbooks",
     description:
-      "The gold standard for olympiad mechanics. Packed with problems ranging from easy to brutal, and covers everything needed for mechanics at competition level.",
+      "The best mechanics book for olympiad prep. Problems range from straightforward to really hard. This is what you need for Phase 1–2.",
     difficulty: 4,
     bestFor: "Phase 1 and 2 mechanics",
     timeCommitment: "3–4 months",
@@ -23,7 +16,7 @@ export const resources: Resource[] = [
     author: "Purcell & Morin",
     category: "textbooks",
     description:
-      "A deeply physical treatment of E&M that builds genuine intuition rather than formula recall. Bridges Gaussian units to SI. Read before attempting Griffiths.",
+      "Builds real intuition for E&M instead of memorizing formulas. Uses Gaussian units but bridges to SI. Start here before Griffiths.",
     difficulty: 4,
     bestFor: "Phase 2 electricity and magnetism",
     timeCommitment: "2–3 months",
@@ -34,7 +27,7 @@ export const resources: Resource[] = [
     author: "David Griffiths",
     category: "textbooks",
     description:
-      "The standard undergraduate E&M text. More mathematical than Purcell, and excellent preparation for USAPhO-level problems and university physics.",
+      "More rigorous than Purcell, heavier on math. The go to text if you want to go deep into E&M or prep for university-level physics.",
     difficulty: 3,
     bestFor: "Phase 2–3 electricity and magnetism",
     timeCommitment: "2–3 months",
@@ -45,7 +38,7 @@ export const resources: Resource[] = [
     author: "I. E. Irodov",
     category: "textbooks",
     description:
-      "1500 problems spanning all of physics, legendary for their elegance and difficulty. Best used alongside Morin or Purcell, not as a standalone textbook.",
+      "1500 really hard problems across all of physics. Use it as a companion to Morin or Purcell, not on its own.",
     difficulty: 5,
     bestFor: "Problem practice across all phases",
     timeCommitment: "Ongoing",
@@ -56,7 +49,7 @@ export const resources: Resource[] = [
     author: "John R. Taylor",
     category: "textbooks",
     description:
-      "An excellent undergraduate text. Particularly strong for Lagrangian mechanics (Chapter 7) and oscillations (Chapter 5) — more readable than Goldstein.",
+      "Cleaner and more readable than Goldstein. Chapters 5 (oscillations) and 7 (Lagrangian) are especially strong relatively for olympiad prep.",
     difficulty: 3,
     bestFor: "Phase 3 Lagrangian mechanics",
     timeCommitment: "1–2 months (targeted reading)",
@@ -67,18 +60,20 @@ export const resources: Resource[] = [
     author: "Gnädig, Honyek & Vigh",
     category: "textbooks",
     description:
-      "Beautifully curated problems with full solutions. Excellent for building olympiad instincts before moving on to Irodov — a natural Phase 1 companion.",
+      "Beautifully curated problems with full solutions. It is a perfect starter before tackling Irodov and it also builds problem-solving instincts.",
     difficulty: 3,
     bestFor: "Phase 1 problem-solving fluency",
     timeCommitment: "4–6 weeks",
   },
+  },
+  {
   {
     id: "hecht-optics",
     name: "Optics",
     author: "Eugene Hecht",
     category: "textbooks",
     description:
-      "A comprehensive treatment of geometric and wave optics. Chapters 1–9 cover everything F=ma and USAPhO typically test, with rigorous derivations.",
+      "Covers geometric and wave optics at depth. Chapters 1–9 have everything F=ma and USAPhO test, with rigorous derivations throughout.",
     difficulty: 3,
     bestFor: "Phase 3 optics",
     timeCommitment: "3–4 weeks",
@@ -89,7 +84,7 @@ export const resources: Resource[] = [
     author: "Taylor & Wheeler",
     category: "textbooks",
     description:
-      "The clearest introduction to special relativity available. Builds geometric intuition for spacetime diagrams before introducing the algebra.",
+      "The best intro to special relativity. Starts with geometric intuition and spacetime diagrams, then adds the math. Worth reading even if you decide to skip the algebra.",
     difficulty: 3,
     bestFor: "Phase 3 modern physics",
     timeCommitment: "2–3 weeks",
@@ -100,7 +95,7 @@ export const resources: Resource[] = [
     author: "Kleppner & Kolenkow",
     category: "textbooks",
     description:
-      "A rigorous alternative to Morin with a slightly different problem set. Useful for cross-referencing when a Morin explanation doesn't click.",
+      "A solid alternative to Morin. Different problem set and explanations. It useful if a concept from Morin doesn't click.",
     difficulty: 4,
     bestFor: "Phase 1 mechanics, alternate explanations",
     timeCommitment: "3–4 months",
@@ -111,7 +106,7 @@ export const resources: Resource[] = [
     author: "Walter Lewin (OpenCourseWare)",
     category: "videos",
     description:
-      "Legendary lectures with memorable live demonstrations. Best for building intuition and reviewing concepts, not for learning competition-specific technique.",
+      "Famous lectures with great demos. Builds intuition and conceptual understanding, but is not for competition technique. Best for review.",
     difficulty: 2,
     bestFor: "Concept review",
     timeCommitment: "20–30 hours",
@@ -122,7 +117,7 @@ export const resources: Resource[] = [
     author: "Yen-Jie Lee (OpenCourseWare)",
     category: "videos",
     description:
-      "An outstanding treatment of oscillations and waves that goes deeper than most dedicated olympiad resources. Essential viewing during Phase 2.",
+      "Exceptional treatment of oscillations and waves. It also goes deeper than most olympiad resources. Must-watch for Phase 2.",
     difficulty: 3,
     bestFor: "Oscillations and waves",
     timeCommitment: "15–20 hours",
@@ -133,7 +128,7 @@ export const resources: Resource[] = [
     author: "Art of Problem Solving",
     category: "videos",
     description:
-      "The most respected online olympiad physics course. Covers every topic at USAPhO depth with weekly problem sets and instructor feedback. A serious time investment with serious results.",
+      "The best online olympiad physics course if you are willing to pay. Covers every topic at USAPhO level with weekly problems and feedback.",
     difficulty: 5,
     bestFor: "Complete Phase 2–3 preparation",
     timeCommitment: "8–9 months",
@@ -144,7 +139,7 @@ export const resources: Resource[] = [
     author: "MIT OpenCourseWare",
     category: "videos",
     description:
-      "Goes beyond what F=ma requires, but the early lectures on thermodynamics build real understanding of entropy that formula memorization never will.",
+      "Overkill for F=ma, but the thermodynamics lectures teach entropy conceptually.",
     difficulty: 4,
     bestFor: "Deepening thermodynamics",
     timeCommitment: "8–10 hours (selective viewing)",
@@ -152,13 +147,14 @@ export const resources: Resource[] = [
   {
     id: "fma-exams",
     name: "F=ma Past Exams",
-    author: "AAPT / American Association of Physics Teachers",
+    author: "AAPT",
     category: "exams",
     description:
-      "25 multiple-choice problems, 75 minutes — the official qualifying exam for USAPhO. Work through 2010–present under timed conditions as your primary benchmark.",
+      "25 multiple-choice problems, 75 minutes. Do 2010–present under timed conditions. Do not waste these!!!! Do them after you have studied well!!!",
     difficulty: 3,
     bestFor: "F=ma preparation and topic review",
     timeCommitment: "1–2 hours per exam",
+  },
   },
   {
     id: "usapho-exams",
@@ -166,7 +162,7 @@ export const resources: Resource[] = [
     author: "AAPT",
     category: "exams",
     description:
-      "Free-response, proof-based problems for the semi-final qualifier for the US IPhO team. Significantly harder than F=ma — start these only after Phase 3.",
+      
     difficulty: 5,
     bestFor: "USAPhO preparation",
     timeCommitment: "3 hours per exam",
@@ -177,7 +173,7 @@ export const resources: Resource[] = [
     author: "International Physics Olympiad",
     category: "exams",
     description:
-      "International Physics Olympiad problems — harder than USAPhO and often more creative. A worthwhile stretch goal even for students targeting F=ma only.",
+      "International Physics Olympiad problems. Harder than USAPhO and often more creative. A worthwhile stretch goal even for students targeting F=ma only.",
     difficulty: 5,
     bestFor: "Advanced, creative problem-solving",
     timeCommitment: "Selective practice",
@@ -188,7 +184,7 @@ export const resources: Resource[] = [
     author: "AoPS community",
     category: "communities",
     description:
-      "The largest English-language olympiad community. The physics subforum has searchable discussion of past problems, resource recommendations, and study strategies.",
+      "The largest English-language olympiad community. The go to physics subforum has searchable discussion of past problems, resource recommendations, and study strategies.",
     difficulty: 1,
     bestFor: "Community discussion and problem help",
     timeCommitment: "As needed",
@@ -199,7 +195,7 @@ export const resources: Resource[] = [
     author: "Stack Exchange community",
     category: "communities",
     description:
-      "A question-and-answer site for conceptual and technical physics questions. Useful when you're stuck on a concept and a different explanation might help it click.",
+      "A question-and-answer site for conceptual and technical physics questions. Usually useful when you're stuck on a concept and a different explanation might help it click.",
     difficulty: 2,
     bestFor: "Concept clarification",
     timeCommitment: "As needed",
@@ -210,7 +206,7 @@ export const resources: Resource[] = [
     author: "Reddit community",
     category: "communities",
     description:
-      "An active community for olympiad preparation — resource recommendations, motivation, and peer comparison. Check the pinned wiki before posting a new question.",
+      "An active community for olympiad preparation. It has resource recommendations, motivation, and peer comparison. Check the pinned wiki before posting a new question.",
     difficulty: 1,
     bestFor: "Community support and resource discovery",
     timeCommitment: "As needed",
@@ -221,7 +217,7 @@ export const resources: Resource[] = [
     author: "Wolfram",
     category: "websites",
     description:
-      "Best used to verify an intermediate calculation, not to solve a problem outright. Checking an integral for a potential energy term is fair game; letting it solve the whole problem defeats the purpose.",
+      "Best used to verify an intermediate calculation and not to solve a problem outright. Checking an integral for a potential energy term is what YOU should be doing; letting it solve the whole problem defeats the purpose.",
     difficulty: 1,
     bestFor: "Calculation verification",
     timeCommitment: "As needed",
