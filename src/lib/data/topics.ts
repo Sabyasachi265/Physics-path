@@ -8,7 +8,6 @@ import type { Topic } from "@/types/content";
  */
 export const topics: Topic[] = [
   {
-  {
     id: "kinematics",
     name: "Advanced Kinematics",
     icon: "target",
