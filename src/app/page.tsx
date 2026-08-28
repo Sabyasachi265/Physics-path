@@ -9,12 +9,12 @@ const FEATURES = [
   {
     icon: Map,
     title: "Structured roadmap",
-    body: "A clear sequence with checkpoints, so you always know what to tackle next.",
+    body: "A clear sequence with checkpoints.",
   },
   {
     icon: BookOpen,
     title: "Honest resource ratings",
-    body: "Textbooks, videos, and problem sets rated by difficulty and time commitment. No filler.",
+    body: "Textbooks, videos, and problem sets rated by difficulty and time commitment.",
   },
   {
     icon: CheckCircle2,
@@ -24,12 +24,12 @@ const FEATURES = [
   {
     icon: AlertTriangle,
     title: "Common misconceptions",
-    body: "Every topic flags the exact mistakes that trip up AP-trained students moving to olympiad style.",
+    body: "Every topic flags common mistakes.",
   },
   {
     icon: Target,
     title: "Curated problems",
-    body: "Hand-picked practice problems tied directly to the concept you're studying.",
+    body: "Picked practice problems tied directly to the concept you're studying.",
   },
   {
     icon: Link2,
@@ -55,14 +55,12 @@ export default function LandingPage() {
       {/* Hero */}
       <section className="container flex flex-col items-center py-20 text-center">
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-3 py-1 text-xs font-medium text-muted-foreground">
-          AP Physics → F=ma → USAPhO
+          AP Physics → F=ma → USAPhO (come on you gotta be at least AP physics to start)
         </div>
         <h1 className="max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
-          The roadmap I wish I had for <span className="text-primary">competition physics</span>
+          Roadmap so yall don't end up like me <span className="text-primary">competition physics</span>
         </h1>
         <p className="mx-auto mt-5 max-w-md text-muted-foreground">
-          Structured, curated, and honest. Start from AP Physics and build your way to the
-          olympiad — one concept at a time.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Button asChild size="lg">
@@ -136,10 +134,9 @@ export default function LandingPage() {
         <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
           Why Physics Path
         </p>
-        <h2 className="text-2xl font-bold tracking-tight">Built for the gap nobody talks about</h2>
+        <h2 className="text-2xl font-bold tracking-tight">I built it for the gap which is ignored.</h2>
         <p className="mt-2 max-w-md text-sm text-muted-foreground">
-          AP Physics gives you a foundation. Olympiad prep requires a different kind of thinking —
-          this is the mission Physics Path exists for.
+          AP Physics gives you a foundation. Olympiad prep requires a sort of rewiring.
         </p>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
