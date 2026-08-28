@@ -95,7 +95,6 @@ export const topics: Topic[] = [
     practiceProblems: ["F=ma 2021 #11", "Irodov 1.156–1.180"],
     relatedTopicIds: ["dynamics", "rotation"],
   },
-  },
   {
     id: "rotation",
     name: "Rotational Motion",
