@@ -153,7 +153,6 @@ export const resources: Resource[] = [
     bestFor: "F=ma preparation and topic review",
     timeCommitment: "1–2 hours per exam",
   },
-  },
   {
     id: "usapho-exams",
     name: "USAPhO Past Exams",
