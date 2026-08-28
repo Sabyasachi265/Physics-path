@@ -19,8 +19,7 @@ export default function TopicsPage() {
     <div className="container max-w-4xl py-10">
       <h1 className="text-3xl font-bold tracking-tight">Topic pages</h1>
       <p className="mt-2 text-muted-foreground">
-        Deep dives into every subject area, with concept overviews, misconceptions, and curated
-        practice problems.
+        Deep dives into every subject area, with concept overviews, misconceptions.
       </p>
 
       <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3">
