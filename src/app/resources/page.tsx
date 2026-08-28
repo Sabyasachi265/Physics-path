@@ -19,20 +19,20 @@ export default function ResourcesPage() {
         Every resource rated for difficulty and time commitment.
       </p>
 
-      <div className="mt-6 flex gap-1 overflow-x-auto border-b border-border">
-        {resourceCategories.map((cat) => (
-          <button
-            key={cat.key}
-            onClick={() => setActiveTab(cat.key)}
-            className={cn(
-              "shrink-0 border-b-2 border-transparent px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground",
-              activeTab === cat.key && "border-primary text-primary"
-            )}
-          >
-            {cat.label}
-          </button>
-        ))}
-      </div>
+     <div className="mt-6 flex gap-1 overflow-x-auto border-b border-border">
+  {resourceCategories.filter(cat => cat.key !== "problems").map((cat) => (
+    <button
+      key={cat.key}
+      onClick={() => setActiveTab(cat.key)}
+      className={cn(
+        "shrink-0 border-b-2 border-transparent px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground",
+        activeTab === cat.key && "border-primary text-primary"
+      )}
+    >
+      {cat.label}
+    </button>
+  ))}
+</div>
 
       <div className="mt-6 grid gap-3 sm:grid-cols-2">
         {items.map((resource) => {
