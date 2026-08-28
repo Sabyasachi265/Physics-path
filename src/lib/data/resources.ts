@@ -65,7 +65,6 @@ export const resources: Resource[] = [
     bestFor: "Phase 1 problem-solving fluency",
     timeCommitment: "4–6 weeks",
   },
-  },
   {
   {
     id: "hecht-optics",
