@@ -1,3 +1,4 @@
+import type { Resource, ResourceCategory } from "@/types/content";
 export const resources: Resource[] = [
   {
     id: "morin-mechanics",
