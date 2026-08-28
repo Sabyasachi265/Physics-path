@@ -16,7 +16,7 @@ export default function ResourcesPage() {
     <div className="container max-w-4xl py-10">
       <h1 className="text-3xl font-bold tracking-tight">Resource library</h1>
       <p className="mt-2 text-muted-foreground">
-        Every resource rated for difficulty and time commitment. No padding, no filler.
+        Every resource rated for difficulty and time commitment.
       </p>
 
       <div className="mt-6 flex gap-1 overflow-x-auto border-b border-border">
