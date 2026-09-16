@@ -53,7 +53,7 @@ export default function LandingPage() {
           AP Physics → F=ma → USAPhO (come on you gotta be at least AP physics to start)
         </div>
         <h1 className="max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
-          Roadmap so yall don't end up like me <span className="text-primary">competition physics</span>
+          Resources for <span className="text-primary">competition physics</span>
         </h1>
         <p className="mx-auto mt-5 max-w-md text-muted-foreground">
         </p>
