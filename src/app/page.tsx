@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { phases } from "@/lib/data/phases";
 import { topics } from "@/lib/data/topics";
 import { resources } from "@/lib/data/resources";
-
+<meta name="google-site-verification" content="5qwGcVbh5aNKk7xXR_JpvLhzy6nS2fPekJUmMcXRUKw" />
 const FEATURES = [
   {
     icon: Map,
